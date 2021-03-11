@@ -1,0 +1,1 @@
+nodejs ALL=(ALL) NOPASSWD: /usr/bin/ir-keytable

@@ -1,0 +1,15 @@
+[Unit]
+Description=Start Remote Control(Input) to MQTT Service
+After=network.target
+
+[Service]
+User=nodejs
+ExecStart=/usr/bin/nodejs ./rc-mqtt.js
+ExecReload=/bin/kill $MAINPID
+WorkingDirectory=/opt/rc-mqtt
+Type=simple
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

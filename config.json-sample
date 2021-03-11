@@ -1,0 +1,30 @@
+{
+  "debug": false,
+  "mqtt_conf": {
+    "cafile": ",/easyrsa-ca.crt",
+    "host": "mqtt.example.com",
+    "inactivity_timeout": 90,
+    "keepalive_interval": 60,
+    "password": "not-a-real-password",
+    "ping_topic": "ping/remotes/room/_ping",
+    "port": 8883,
+    "prefix": "home/remotes/room",
+    "protocol": "mqtts",
+    "username": "rc2mqtt",
+    "will_topic": "home/remotes/room/state"
+  },
+  "rc_keymaps": [
+    "deliberately-wrong",
+    "./rc_keymaps",
+    "/lib/udev/rc_keymaps"
+  ],
+  "rc_modules": [
+    "deliberately-wrong",
+    "./rc_modules"
+  ],
+  "remotes": [
+	  "lg_tv",
+	  "squeezebox"
+  ],
+  "verbose" : true
+}

@@ -1,3 +1,7 @@
+BAK/
+*.crt
+config.json
+TODO
 # Logs
 logs
 *.log
